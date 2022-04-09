@@ -1,6 +1,6 @@
 # NER-Demo
 日本語固有表現抽出のデモを実行できます．  
-<img src="img/fig1.png" width="500">
+<img src="img/fig1.png" width="700">
 
 ## 環境
 Dockerとdocker-composeを利用しています．GPUが必要になります．  

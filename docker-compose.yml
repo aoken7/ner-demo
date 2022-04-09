@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build: /$PWD/backend/docker
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    tty: true
+    volumes:
+      - /$PWD/:/working_dir
+    working_dir: /working_dir
+    container_name: backend
+    hostname: backend
+    ports:
+      - 5500:5500
+  frontend:
+    build: /$PWD/frontend/docker
+    tty: true
+    volumes:
+      - /$PWD/:/working_dir
+    working_dir: /working_dir
+    container_name: frontend
+    hostname: frontend

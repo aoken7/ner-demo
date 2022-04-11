@@ -51,7 +51,7 @@ export default {
     },
     getRandomFromBackend: async function () {
 
-      const path = `http://localhost:5500/api/ner`
+      const path = 'http://150.89.233.81:5500/api/ner'
       await axios.post(path, {
         input_text: this.input_text
       })

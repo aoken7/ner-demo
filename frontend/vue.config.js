@@ -2,7 +2,7 @@ module.exports = {
     devServer: {
       proxy: {
         "/api/": {
-          target: "ner-demo_backend://backend:5500",
+          target: "http://150.89.233.81:5500",
         }
       }
     }
